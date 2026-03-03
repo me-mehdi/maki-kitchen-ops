@@ -468,10 +468,6 @@ export default function App() {
                 </div>
             )}
 
-            {/* Footer Nav (Mobile) */}
-            <footer className="fixed bottom-0 left-0 right-0 bg-slate-900/95 backdrop-blur-md border-t border-slate-800 p-3.5 flex justify-center items-center text-[10px] text-slate-500 font-black uppercase tracking-widest z-40">
-                Kitchen Prep Guide • v1.1
-            </footer>
         </div>
     );
 }
