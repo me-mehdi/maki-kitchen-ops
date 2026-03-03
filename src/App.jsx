@@ -10,7 +10,8 @@ import {
     Clock,
     Thermometer,
     Soup,
-    Drumstick
+    Drumstick,
+    Beef
 } from 'lucide-react';
 
 const MENU_DATA = [
@@ -108,7 +109,7 @@ const MENU_DATA = [
         id: 6,
         name: "Takoyaki",
         category: "Sides",
-        dietary: [],
+        dietary: ["Seafood"],
         cookTime: "4-5 mins",
         cookTemp: "180°C",
         image: "https://www.makiramen.com/wp-content/uploads/2024/11/Takoyaki.png",
@@ -359,6 +360,7 @@ export default function App() {
                             <div className="absolute bottom-3 left-3 flex gap-2">
                                 {(item.dietary.includes("Vegan") || item.dietary.includes("Vegetarian")) && <span className="bg-green-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Leaf size={12} /></span>}
                                 {item.dietary.includes("Chicken") && <span className="bg-red-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Drumstick size={12} /></span>}
+                                {item.dietary.includes("Pork") && <span className="bg-red-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Beef size={12} /></span>}
                                 {item.dietary.includes("Seafood") && <span className="bg-blue-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Waves size={12} /></span>}
                                 {item.dietary.includes("Spicy") && <span className="bg-orange-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Flame size={12} /></span>}
                             </div>
