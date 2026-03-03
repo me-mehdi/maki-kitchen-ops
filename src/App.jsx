@@ -297,7 +297,7 @@ export default function App() {
     };
 
     return (
-        <div className="min-h-screen bg-slate-950 text-slate-100 font-sans pb-20">
+        <div className="min-h-screen bg-slate-950 text-slate-100 font-sans pb-4">
             {/* Header */}
             <header className="sticky top-0 z-30 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 p-4">
                 <div className="flex items-center justify-between mb-4">
