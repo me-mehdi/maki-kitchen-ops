@@ -9,7 +9,8 @@ import {
     Info,
     Clock,
     Thermometer,
-    Soup
+    Soup,
+    Drumstick
 } from 'lucide-react';
 
 const MENU_DATA = [
@@ -51,7 +52,7 @@ const MENU_DATA = [
         id: 3,
         name: "Spicy Chicken Teriyaki",
         category: "Sides",
-        dietary: ["Spicy"],
+        dietary: ["Chicken", "Spicy"],
         cookTime: "2 mins",
         cookTemp: "180°C",
         image: "https://www.makiramen.com/wp-content/uploads/2024/11/Spicy-Chicken-Teriyaki-.png",
@@ -67,7 +68,7 @@ const MENU_DATA = [
         id: 4,
         name: "Spicy Chicken Karaage Donburi",
         category: "Rice Bowls",
-        dietary: ["Spicy"],
+        dietary: ["Chicken", "Spicy"],
         cookTime: "2 mins",
         cookTemp: "180°C",
         image: "https://www.makiramen.com/wp-content/uploads/2024/11/Spicy-Chicken-Teriyaki-Rice-2.png",
@@ -87,7 +88,7 @@ const MENU_DATA = [
         id: 5,
         name: "Cha Shu Yakisoba",
         category: "Noodles",
-        dietary: [],
+        dietary: ["Pork"],
         cookTime: "Wok Fry",
         cookTemp: "Hot",
         image: "https://www.makiramen.com/wp-content/uploads/2024/11/Cha-Sui-Yakisoba.png",
@@ -143,7 +144,7 @@ const MENU_DATA = [
         id: 8,
         name: "Chicken Yakisoba",
         category: "Noodles",
-        dietary: [],
+        dietary: ["Chicken"],
         cookTime: "Wok Fry",
         cookTemp: "Hot",
         image: "https://www.makiramen.com/wp-content/uploads/2024/11/Chicken-Yakisoba.png",
@@ -180,7 +181,7 @@ const MENU_DATA = [
         id: 10,
         name: "Chicken Katsu Curry",
         category: "Curry",
-        dietary: [],
+        dietary: ["Chicken"],
         cookTime: "5 mins",
         cookTemp: "180°C",
         image: "https://www.makiramen.com/wp-content/uploads/2024/11/Chicken-Katsu-Curry.png",
@@ -356,9 +357,10 @@ export default function App() {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80" />
                             <div className="absolute bottom-3 left-3 flex gap-2">
-                                {item.dietary.includes("Vegan") && <span className="bg-green-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Leaf size={12} /></span>}
-                                {item.dietary.includes("Spicy") && <span className="bg-red-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Flame size={12} /></span>}
+                                {(item.dietary.includes("Vegan") || item.dietary.includes("Vegetarian")) && <span className="bg-green-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Leaf size={12} /></span>}
+                                {item.dietary.includes("Chicken") && <span className="bg-red-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Drumstick size={12} /></span>}
                                 {item.dietary.includes("Seafood") && <span className="bg-blue-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Waves size={12} /></span>}
+                                {item.dietary.includes("Spicy") && <span className="bg-orange-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Flame size={12} /></span>}
                             </div>
                         </div>
 
