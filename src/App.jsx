@@ -328,7 +328,7 @@ const MENU_DATA = [
         dietary: ["Chicken"],
         cookTime: "Boil",
         cookTemp: "Hot",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Chicken-Ramen.png",
+        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Seafood-Hell-Ramen-1.png",
         ingredients: [
             "3 VEG (2 pinch Wakame, 4 pinch Spring Onion, 3-4 Bamboo Shoot)",
             "Boiled Egg & Sesame Seeds",
@@ -344,7 +344,7 @@ const MENU_DATA = [
         dietary: ["Pork", "Spicy"],
         cookTime: "Boil",
         cookTemp: "Hot",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Hell-Ramen.png",
+        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Vegan-Hell-Ramen.png",
         ingredients: [
             "3 VEG (2 pinch Wakame, 4 pinch Spring Onion, 3-4 Bamboo Shoot)",
             "Boiled Egg & Sesame Seeds",
@@ -361,7 +361,7 @@ const MENU_DATA = [
         dietary: ["Vegetarian"],
         cookTime: "Boil",
         cookTemp: "Hot",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Miso-Ramen.png",
+        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Vegan-Miso-Ramen-2.png",
         ingredients: [
             "3 VEG (2 pinch Wakame, 4 pinch Spring Onion, 3-4 Bamboo Shoot)",
             "Boiled Egg & Sesame Seeds",
