@@ -293,7 +293,7 @@ const MENU_DATA = [
         dietary: ["Beef"],
         cookTime: "Boil",
         cookTemp: "Hot",
-        image: "./images/Steak-Tataki.png",
+        image: "./images/Steak-Tataki-Nigiri.png",
         ingredients: [
             "3 VEG (2 pinch Wakame, 4 pinch Spring Onion, 3-4 Bamboo Shoot)",
             "Boiled Egg & Sesame Seeds",
@@ -370,6 +370,21 @@ const MENU_DATA = [
             "1 RED SPOON (40g) Miso Paste"
         ],
         sauce: "Miso Broth"
+    },
+    {
+        id: 21,
+        name: "Gyoza (Chicken or Veg)",
+        category: "Sides",
+        dietary: ["Chicken"],
+        cookTime: "3.5 mins",
+        cookTemp: "Fried",
+        image: "./images/Pork-Gyoza.png",
+        ingredients: [
+            "Pan fry 5 pieces of Gyoza until crispy bottom",
+            "Add a dash of water and cover to steam",
+            "Serve with Gyoza dipping sauce"
+        ],
+        sauce: "Gyoza Sauce"
     }
 ];
 
