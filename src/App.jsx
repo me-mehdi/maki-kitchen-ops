@@ -382,7 +382,7 @@ const SAUCE_DATA = {
     "Mayo": ["Japanese Kewpie Mayo", "Egg Yolk", "Rice Vinegar"]
 };
 
-const CATEGORIES = ["All", "Ramen", "Curry", "Noodles", "Rice Bowls", "Sides"];
+const CATEGORIES = ["All", "Ramen", "Curry", "Noodles", "Rice Bowls", "Sides", "Vegan", "Chicken", "Seafood"];
 
 export default function App() {
     const [activeCategory, setActiveCategory] = useState("All");
@@ -392,7 +392,16 @@ export default function App() {
 
     const filteredMenu = useMemo(() => {
         return MENU_DATA.filter(item => {
-            const matchesCategory = activeCategory === "All" || item.category === activeCategory;
+            let matchesCategory = false;
+            if (activeCategory === "All") {
+                matchesCategory = true;
+            } else if (["Vegan", "Chicken", "Seafood"].includes(activeCategory)) {
+                matchesCategory = item.dietary.includes(activeCategory) ||
+                    (activeCategory === "Vegan" && item.dietary.includes("Vegetarian"));
+            } else {
+                matchesCategory = item.category === activeCategory;
+            }
+
             const matchesSearch = item.name.toLowerCase().includes(searchQuery.toLowerCase());
             return matchesCategory && matchesSearch;
         });
