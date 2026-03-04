@@ -22,7 +22,7 @@ const MENU_DATA = [
         dietary: ["Vegan"],
         cookTime: "5 mins",
         cookTemp: "180°C",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Vegan-Chicken-Katsu-Curry.png",
+        image: "./images/Vegan-Chicken-Katsu-Curry.png",
         ingredients: [
             "Fry vegan Chicken Katsu (180c 5 mins)",
             "Rice (200g) moulded",
@@ -40,7 +40,7 @@ const MENU_DATA = [
         dietary: ["Vegetarian"],
         cookTime: "4 mins",
         cookTemp: "180°C",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Pumpkin-Croquettes.png",
+        image: "./images/Pumpkin-Croquettes.png",
         ingredients: [
             "Pumpkin Croquettes 2 pcs",
             "Fry (180c 4 mins)",
@@ -56,7 +56,7 @@ const MENU_DATA = [
         dietary: ["Chicken", "Spicy"],
         cookTime: "2 mins",
         cookTemp: "180°C",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Spicy-Chicken-Teriyaki-.png",
+        image: "./images/Spicy-Chicken-Teriyaki-.png",
         ingredients: [
             "Chicken Karaage 7 pcs",
             "Fry (180c 2 mins)",
@@ -72,7 +72,7 @@ const MENU_DATA = [
         dietary: ["Chicken", "Spicy"],
         cookTime: "2 mins",
         cookTemp: "180°C",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Spicy-Chicken-Teriyaki-Rice-2.png",
+        image: "./images/Spicy-Chicken-Teriyaki-Rice-2.png",
         ingredients: [
             "Chicken Karaage 5 pcs",
             "Fry (180c 2 mins)",
@@ -92,7 +92,7 @@ const MENU_DATA = [
         dietary: ["Pork"],
         cookTime: "Wok Fry",
         cookTemp: "Hot",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Cha-Sui-Yakisoba.png",
+        image: "./images/Cha-Sui-Yakisoba.png",
         ingredients: [
             "Soba Veg handful portion",
             "Soba noodles 16oz cup full",
@@ -112,7 +112,7 @@ const MENU_DATA = [
         dietary: ["Seafood"],
         cookTime: "4-5 mins",
         cookTemp: "180°C",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Takoyaki.png",
+        image: "./images/Takoyaki.png",
         ingredients: [
             "Deep fry from Frozen 5 mins",
             "Deep fry from Fridge 4 mins",
@@ -130,7 +130,7 @@ const MENU_DATA = [
         dietary: ["Vegetarian"],
         cookTime: "4 mins",
         cookTemp: "180°C",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Pumpkin-Katsu-Curry.png",
+        image: "./images/Pumpkin-Katsu-Curry.png",
         ingredients: [
             "Fry Pumpkin Croquettes for 4 mins",
             "Rice (200g) moulded",
@@ -148,7 +148,7 @@ const MENU_DATA = [
         dietary: ["Chicken"],
         cookTime: "Wok Fry",
         cookTemp: "Hot",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Chicken-Yakisoba.png",
+        image: "./images/Chicken-Yakisoba.png",
         ingredients: [
             "Soba Veg handful portion",
             "Soba noodles 16oz cup full",
@@ -168,7 +168,7 @@ const MENU_DATA = [
         dietary: ["Seafood"],
         cookTime: "2 mins",
         cookTemp: "180°C",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Prawn-Tempura.png",
+        image: "./images/Prawn-Tempura.png",
         ingredients: [
             "Tempura batter: 700g Flour, 1L water",
             "Fry 2 mins",
@@ -185,7 +185,7 @@ const MENU_DATA = [
         dietary: ["Chicken"],
         cookTime: "5 mins",
         cookTemp: "180°C",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Chicken-Katsu-Curry.png",
+        image: "./images/Chicken-Katsu-Curry.png",
         ingredients: [
             "Fry Chicken Katsu 180c 5 mins",
             "Rice (200g) moulded",
@@ -203,7 +203,7 @@ const MENU_DATA = [
         dietary: ["Vegetarian"],
         cookTime: "Wok Fry",
         cookTemp: "Hot",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Veg-Yakisoba.png",
+        image: "./images/Veg-Yakisoba.png",
         ingredients: [
             "Veg handful portion",
             "Soba noodles 16oz cup full",
@@ -223,7 +223,7 @@ const MENU_DATA = [
         dietary: ["Seafood", "Spicy"],
         cookTime: "2.5 mins",
         cookTemp: "180°C",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Squid-Tempura.png",
+        image: "./images/Squid-Tempura.png",
         ingredients: [
             "Take 10 pcs squid mix with potato starch",
             "Fry 180c for 2.5 mins",
@@ -240,7 +240,7 @@ const MENU_DATA = [
         dietary: ["Vegetarian"],
         cookTime: "-",
         cookTemp: "> 75°C",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Miso-Soup.png",
+        image: "./images/Miso-Soup.png",
         ingredients: [
             "Miso paste: 250gm",
             "Dashi 2 spoons",
@@ -261,7 +261,7 @@ const MENU_DATA = [
         dietary: ["Vegan"],
         cookTime: "40 secs",
         cookTemp: "Boil",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Edamame.png",
+        image: "./images/Edamame.png",
         ingredients: [
             "40 seconds in boiling water"
         ],
@@ -274,7 +274,7 @@ const MENU_DATA = [
         dietary: ["Pork"],
         cookTime: "Boil",
         cookTemp: "Hot",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Black-Tonkotsu-Ramen.png",
+        image: "./images/Black-Tonkotsu-Ramen.png",
         ingredients: [
             "3 VEG (2 pinch Wakame, 4 pinch Spring Onion, 3-4 Bamboo Shoot)",
             "Boiled Egg (NO Sesame Seeds)",
@@ -293,7 +293,7 @@ const MENU_DATA = [
         dietary: ["Beef"],
         cookTime: "Boil",
         cookTemp: "Hot",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Steak-Tataki.png",
+        image: "./images/Steak-Tataki.png",
         ingredients: [
             "3 VEG (2 pinch Wakame, 4 pinch Spring Onion, 3-4 Bamboo Shoot)",
             "Boiled Egg & Sesame Seeds",
@@ -309,7 +309,7 @@ const MENU_DATA = [
         dietary: ["Pork", "Spicy"],
         cookTime: "Boil",
         cookTemp: "Hot",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Tan-Tan-Ramen.png",
+        image: "./images/Tan-Tan-Ramen.png",
         ingredients: [
             "Boiled Egg & Sesame Seeds",
             "4 Finger Pinch Spring Onion",
@@ -328,7 +328,7 @@ const MENU_DATA = [
         dietary: ["Chicken"],
         cookTime: "Boil",
         cookTemp: "Hot",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Seafood-Hell-Ramen-1.png",
+        image: "./images/Seafood-Hell-Ramen-1.png",
         ingredients: [
             "3 VEG (2 pinch Wakame, 4 pinch Spring Onion, 3-4 Bamboo Shoot)",
             "Boiled Egg & Sesame Seeds",
@@ -344,7 +344,7 @@ const MENU_DATA = [
         dietary: ["Pork", "Spicy"],
         cookTime: "Boil",
         cookTemp: "Hot",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Vegan-Hell-Ramen.png",
+        image: "./images/Vegan-Hell-Ramen.png",
         ingredients: [
             "3 VEG (2 pinch Wakame, 4 pinch Spring Onion, 3-4 Bamboo Shoot)",
             "Boiled Egg & Sesame Seeds",
@@ -361,7 +361,7 @@ const MENU_DATA = [
         dietary: ["Vegetarian"],
         cookTime: "Boil",
         cookTemp: "Hot",
-        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Vegan-Miso-Ramen-2.png",
+        image: "./images/Vegan-Miso-Ramen-2.png",
         ingredients: [
             "3 VEG (2 pinch Wakame, 4 pinch Spring Onion, 3-4 Bamboo Shoot)",
             "Boiled Egg & Sesame Seeds",
