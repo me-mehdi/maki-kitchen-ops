@@ -266,6 +266,60 @@ const MENU_DATA = [
             "40 seconds in boiling water"
         ],
         sauce: "None"
+    },
+    {
+        id: 15,
+        name: "Black Tonkotsu Ramen",
+        category: "Ramen",
+        dietary: ["Pork"],
+        cookTime: "Boil",
+        cookTemp: "Hot",
+        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Black-Tonkotsu-Ramen.png",
+        ingredients: [
+            "3 VEG (2 pinch Wakame, 4 pinch Spring Onion, 3-4 Bamboo Shoot)",
+            "Boiled Egg (NO Sesame Seeds)",
+            "1 tbsp Fried Onion",
+            "2-3 pcs Cha Siu",
+            "1 tsp Black Garlic Oil",
+            "14mm ladle Soyu",
+            "1 tsp Garlic Puree"
+        ],
+        sauce: "Tonkotsu Broth"
+    },
+    {
+        id: 16,
+        name: "Steak Tataki Ramen",
+        category: "Ramen",
+        dietary: ["Beef"],
+        cookTime: "Boil",
+        cookTemp: "Hot",
+        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Steak-Tataki.png",
+        ingredients: [
+            "3 VEG (2 pinch Wakame, 4 pinch Spring Onion, 3-4 Bamboo Shoot)",
+            "Boiled Egg & Sesame Seeds",
+            "5-6 Steak Slices",
+            "1 RED SPOON (40g) Tataki Paste"
+        ],
+        sauce: "Broth"
+    },
+    {
+        id: 17,
+        name: "Tan Tan Ramen",
+        category: "Ramen",
+        dietary: ["Pork", "Spicy"],
+        cookTime: "Boil",
+        cookTemp: "Hot",
+        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Tan-Tan-Ramen.png",
+        ingredients: [
+            "Boiled Egg & Sesame Seeds",
+            "4 Finger Pinch Spring Onion",
+            "1 handful Cucumber",
+            "2 RED SPOON Tan Tan Meat",
+            "2-3 Pak Choy Leafs",
+            "1 RED SPOON (40g) Tan Tan Paste",
+            "1 RED SPOON Chilli Beans"
+        ],
+        sauce: "Tan Tan Broth"
     }
 ];
 
@@ -278,7 +332,7 @@ const SAUCE_DATA = {
     "Mayo": ["Japanese Kewpie Mayo", "Egg Yolk", "Rice Vinegar"]
 };
 
-const CATEGORIES = ["All", "Curry", "Noodles", "Rice Bowls", "Sides"];
+const CATEGORIES = ["All", "Ramen", "Curry", "Noodles", "Rice Bowls", "Sides"];
 
 export default function App() {
     const [activeCategory, setActiveCategory] = useState("All");
