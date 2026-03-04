@@ -320,6 +320,56 @@ const MENU_DATA = [
             "1 RED SPOON Chilli Beans"
         ],
         sauce: "Tan Tan Broth"
+    },
+    {
+        id: 18,
+        name: "Chicken Ramen",
+        category: "Ramen",
+        dietary: ["Chicken"],
+        cookTime: "Boil",
+        cookTemp: "Hot",
+        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Chicken-Ramen.png",
+        ingredients: [
+            "3 VEG (2 pinch Wakame, 4 pinch Spring Onion, 3-4 Bamboo Shoot)",
+            "Boiled Egg & Sesame Seeds",
+            "5-6 Chicken Karaage",
+            "1 RED SPOON Chicken Paste"
+        ],
+        sauce: "Chicken Broth"
+    },
+    {
+        id: 19,
+        name: "Hell Ramen",
+        category: "Ramen",
+        dietary: ["Pork", "Spicy"],
+        cookTime: "Boil",
+        cookTemp: "Hot",
+        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Hell-Ramen.png",
+        ingredients: [
+            "3 VEG (2 pinch Wakame, 4 pinch Spring Onion, 3-4 Bamboo Shoot)",
+            "Boiled Egg & Sesame Seeds",
+            "2-3 pcs Cha Siu",
+            "1 RED SPOON (40g) Hell Paste",
+            "1 tsp Chilli Oil"
+        ],
+        sauce: "Hell Broth"
+    },
+    {
+        id: 20,
+        name: "Miso Ramen",
+        category: "Ramen",
+        dietary: ["Vegetarian"],
+        cookTime: "Boil",
+        cookTemp: "Hot",
+        image: "https://www.makiramen.com/wp-content/uploads/2024/11/Miso-Ramen.png",
+        ingredients: [
+            "3 VEG (2 pinch Wakame, 4 pinch Spring Onion, 3-4 Bamboo Shoot)",
+            "Boiled Egg & Sesame Seeds",
+            "2-3 Pak Choy Leafs",
+            "3 Slices Fried Tofu",
+            "1 RED SPOON (40g) Miso Paste"
+        ],
+        sauce: "Miso Broth"
     }
 ];
 
