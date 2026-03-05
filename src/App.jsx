@@ -429,7 +429,7 @@ export default function App() {
     return (
         <div className="min-h-screen bg-slate-950 text-slate-100 font-sans pb-4">
             {/* Header */}
-            <header className="sticky top-0 z-30 bg-slate-950 border-b border-slate-800 p-4">
+            <header className="sticky top-0 z-30 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 p-4">
                 <div className="flex items-center justify-between mb-4">
                     <h1 className="text-xl font-bold tracking-tight text-orange-500">KITCHEN OPS</h1>
                     <button
@@ -469,11 +469,11 @@ export default function App() {
                 </div>
             </header>
 
-            <main className="p-4 w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 items-start">
+            <main className="p-4 max-w-md mx-auto space-y-4">
                 {filteredMenu.map((item) => (
                     <div
                         key={item.id}
-                        className={`group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition-shadow transition-colors duration-300 hover:border-slate-700 hover:shadow-xl hover:shadow-black/50 overflow-clip transform-gpu ${expandedId === item.id ? 'ring-1 ring-orange-500/50 bg-slate-800/20' : ''
+                        className={`group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition-all duration-300 hover:border-slate-700 hover:shadow-xl hover:shadow-black/50 ${expandedId === item.id ? 'ring-1 ring-orange-500/50 bg-slate-800/20' : ''
                             }`}
                     >
                         {/* Dish Image */}
@@ -486,11 +486,11 @@ export default function App() {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80" />
                             <div className="absolute bottom-3 left-3 flex gap-2">
-                                {(item.dietary.includes("Vegan") || item.dietary.includes("Vegetarian")) && <span className="bg-green-500/90 text-white p-1.5 rounded-full shadow-lg"><Leaf size={12} /></span>}
-                                {item.dietary.includes("Chicken") && <span className="bg-red-500/90 text-white p-1.5 rounded-full shadow-lg"><Drumstick size={12} /></span>}
-                                {item.dietary.includes("Pork") && <span className="bg-red-500/90 text-white p-1.5 rounded-full shadow-lg"><Beef size={12} /></span>}
-                                {item.dietary.includes("Seafood") && <span className="bg-blue-500/90 text-white p-1.5 rounded-full shadow-lg"><Waves size={12} /></span>}
-                                {item.dietary.includes("Spicy") && <span className="bg-orange-500/90 text-white p-1.5 rounded-full shadow-lg"><Flame size={12} /></span>}
+                                {(item.dietary.includes("Vegan") || item.dietary.includes("Vegetarian")) && <span className="bg-green-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Leaf size={12} /></span>}
+                                {item.dietary.includes("Chicken") && <span className="bg-red-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Drumstick size={12} /></span>}
+                                {item.dietary.includes("Pork") && <span className="bg-red-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Beef size={12} /></span>}
+                                {item.dietary.includes("Seafood") && <span className="bg-blue-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Waves size={12} /></span>}
+                                {item.dietary.includes("Spicy") && <span className="bg-orange-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Flame size={12} /></span>}
                             </div>
                         </div>
 
@@ -513,44 +513,42 @@ export default function App() {
 
                         {/* Expandable Content */}
                         <div
-                            className={`grid transition-all duration-300 ease-out ${expandedId === item.id ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                            className={`overflow-hidden transition-all duration-300 ease-in-out ${expandedId === item.id ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
                                 }`}
                         >
-                            <div className="overflow-hidden">
-                                <div className="px-4 pb-4 pt-1 border-t border-slate-800/50 bg-slate-900/30">
-                                    <div className="py-3 space-y-4">
-                                        <div>
-                                            <h4 className="text-[10px] uppercase font-black text-slate-500 mb-2.5 flex items-center gap-1">
-                                                Ingredients & Portioning
-                                            </h4>
-                                            <ul className="grid grid-cols-1 gap-2">
-                                                {item.ingredients.map((ing, idx) => (
-                                                    <li key={idx} className="flex items-start gap-2.5 text-sm text-slate-300">
-                                                        <div className="w-1.5 h-1.5 rounded-full bg-orange-500/80 mt-1.5 shrink-0" />
-                                                        <span className="leading-snug">{ing}</span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
+                            <div className="px-4 pb-4 pt-1 border-t border-slate-800/50 bg-slate-900/30">
+                                <div className="py-3 space-y-4">
+                                    <div>
+                                        <h4 className="text-[10px] uppercase font-black text-slate-500 mb-2.5 flex items-center gap-1">
+                                            Ingredients & Portioning
+                                        </h4>
+                                        <ul className="grid grid-cols-1 gap-2">
+                                            {item.ingredients.map((ing, idx) => (
+                                                <li key={idx} className="flex items-start gap-2.5 text-sm text-slate-300">
+                                                    <div className="w-1.5 h-1.5 rounded-full bg-orange-500/80 mt-1.5 shrink-0" />
+                                                    <span className="leading-snug">{ing}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
 
-                                        <div className="flex gap-4 p-3 bg-slate-950/50 rounded-xl border border-slate-800/50">
-                                            {item.sauce && item.sauce !== "None" && (
-                                                <div className="flex-1">
-                                                    <h4 className="text-[10px] uppercase font-black text-slate-500 mb-1.5">Sauce</h4>
-                                                    <span className="text-xs px-2.5 py-1 bg-orange-500/10 text-orange-400 rounded-md border border-orange-500/20 inline-block font-medium">
-                                                        {item.sauce}
-                                                    </span>
+                                    <div className="flex gap-4 p-3 bg-slate-950/50 rounded-xl border border-slate-800/50">
+                                        {item.sauce && item.sauce !== "None" && (
+                                            <div className="flex-1">
+                                                <h4 className="text-[10px] uppercase font-black text-slate-500 mb-1.5">Sauce</h4>
+                                                <span className="text-xs px-2.5 py-1 bg-orange-500/10 text-orange-400 rounded-md border border-orange-500/20 inline-block font-medium">
+                                                    {item.sauce}
+                                                </span>
+                                            </div>
+                                        )}
+                                        {item.sides && (
+                                            <div className="flex-1 border-l border-slate-800 pl-4">
+                                                <h4 className="text-[10px] uppercase font-black text-slate-500 mb-1.5">Standard Sides</h4>
+                                                <div className="flex items-center gap-1.5 text-xs text-slate-300 font-medium">
+                                                    <Soup size={14} className="text-orange-500" /> {item.sides[0]}
                                                 </div>
-                                            )}
-                                            {item.sides && (
-                                                <div className="flex-1 border-l border-slate-800 pl-4">
-                                                    <h4 className="text-[10px] uppercase font-black text-slate-500 mb-1.5">Standard Sides</h4>
-                                                    <div className="flex items-center gap-1.5 text-xs text-slate-300 font-medium">
-                                                        <Soup size={14} className="text-orange-500" /> {item.sides[0]}
-                                                    </div>
-                                                </div>
-                                            )}
-                                        </div>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             </div>
@@ -559,7 +557,7 @@ export default function App() {
                 ))}
 
                 {filteredMenu.length === 0 && (
-                    <div className="text-center py-24 text-slate-500 flex flex-col items-center gap-3 col-span-full">
+                    <div className="text-center py-24 text-slate-500 flex flex-col items-center gap-3">
                         <Search size={32} className="text-slate-700" />
                         <p className="font-medium">No dishes found matching your search.</p>
                     </div>
@@ -601,6 +599,7 @@ export default function App() {
                     </div>
                 </div>
             )}
+
         </div>
     );
 }
