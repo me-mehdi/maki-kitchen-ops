@@ -429,7 +429,7 @@ export default function App() {
     return (
         <div className="min-h-screen bg-slate-950 text-slate-100 font-sans pb-4">
             {/* Header */}
-            <header className="sticky top-0 z-30 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 p-4">
+            <header className="sticky top-0 z-30 bg-slate-950 border-b border-slate-800 p-4">
                 <div className="flex items-center justify-between mb-4">
                     <h1 className="text-xl font-bold tracking-tight text-orange-500">KITCHEN OPS</h1>
                     <button
@@ -473,7 +473,7 @@ export default function App() {
                 {filteredMenu.map((item) => (
                     <div
                         key={item.id}
-                        className={`group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition-all duration-300 hover:border-slate-700 hover:shadow-xl hover:shadow-black/50 overflow-clip transform-gpu ${expandedId === item.id ? 'ring-1 ring-orange-500/50 bg-slate-800/20' : ''
+                        className={`group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition-shadow transition-colors duration-300 hover:border-slate-700 hover:shadow-xl hover:shadow-black/50 overflow-clip transform-gpu ${expandedId === item.id ? 'ring-1 ring-orange-500/50 bg-slate-800/20' : ''
                             }`}
                     >
                         {/* Dish Image */}
@@ -486,11 +486,11 @@ export default function App() {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80" />
                             <div className="absolute bottom-3 left-3 flex gap-2">
-                                {(item.dietary.includes("Vegan") || item.dietary.includes("Vegetarian")) && <span className="bg-green-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Leaf size={12} /></span>}
-                                {item.dietary.includes("Chicken") && <span className="bg-red-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Drumstick size={12} /></span>}
-                                {item.dietary.includes("Pork") && <span className="bg-red-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Beef size={12} /></span>}
-                                {item.dietary.includes("Seafood") && <span className="bg-blue-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Waves size={12} /></span>}
-                                {item.dietary.includes("Spicy") && <span className="bg-orange-500/90 text-white p-1.5 rounded-full shadow-lg backdrop-blur-sm"><Flame size={12} /></span>}
+                                {(item.dietary.includes("Vegan") || item.dietary.includes("Vegetarian")) && <span className="bg-green-500/90 text-white p-1.5 rounded-full shadow-lg"><Leaf size={12} /></span>}
+                                {item.dietary.includes("Chicken") && <span className="bg-red-500/90 text-white p-1.5 rounded-full shadow-lg"><Drumstick size={12} /></span>}
+                                {item.dietary.includes("Pork") && <span className="bg-red-500/90 text-white p-1.5 rounded-full shadow-lg"><Beef size={12} /></span>}
+                                {item.dietary.includes("Seafood") && <span className="bg-blue-500/90 text-white p-1.5 rounded-full shadow-lg"><Waves size={12} /></span>}
+                                {item.dietary.includes("Spicy") && <span className="bg-orange-500/90 text-white p-1.5 rounded-full shadow-lg"><Flame size={12} /></span>}
                             </div>
                         </div>
 
