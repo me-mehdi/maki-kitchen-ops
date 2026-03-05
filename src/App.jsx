@@ -469,7 +469,7 @@ export default function App() {
                 </div>
             </header>
 
-            <main className="p-4 max-w-md mx-auto space-y-4">
+            <main className="p-4 w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 items-start">
                 {filteredMenu.map((item) => (
                     <div
                         key={item.id}
@@ -557,7 +557,7 @@ export default function App() {
                 ))}
 
                 {filteredMenu.length === 0 && (
-                    <div className="text-center py-24 text-slate-500 flex flex-col items-center gap-3">
+                    <div className="text-center py-24 text-slate-500 flex flex-col items-center gap-3 col-span-full">
                         <Search size={32} className="text-slate-700" />
                         <p className="font-medium">No dishes found matching your search.</p>
                     </div>
